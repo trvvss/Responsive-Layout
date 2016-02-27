@@ -1,0 +1,283 @@
+/* BASE ELEMENT STYLING */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Varela Round', sans-serif;
+	font-family: 
+	color: #3a3a3a;
+	text-align: center;
+	background-color:  #fafafa;
+}
+
+h1 {
+	font-weight: bolder;
+}
+
+h3 {
+	padding-top: 1em;
+}
+
+p {
+	color: #7f7f7f;
+}
+
+a {
+	text-decoration: none;
+	color: #7f7f7f;
+}
+
+/* REUSABLE CLASSES  */
+
+.init-color {
+  color: initial;
+}
+
+
+/* HEADER STYLING */
+
+.main-header {
+	padding: .5em;
+}
+
+	ul {
+		list-style-type: none;
+		padding: .5em;
+	}
+
+		ul li {
+			display: block;
+			margin: .5em;
+			padding: .5em;
+			background-color: white;
+			text-transform: uppercase;
+			font-weight: bolder;
+		}
+
+	.mini-bio {
+		padding: .5em;
+		margin: .25em;
+	}
+
+		.profile-pic {
+			width: 70%;
+			display: block;
+			margin: 0 auto;
+		}
+
+		.bio-text {
+			padding-top: 1em;
+		}
+
+/* PORTFOLIO STYLING */
+
+
+.portfolio-section {
+	background-color: #ffffff;
+	padding-bottom: 3em;
+}
+
+	.portfolio-pic {
+		width: 90%;
+		display: block;
+		margin: auto;
+	}
+
+	.portfolio-text {
+		padding: .25em 1em;
+	}
+
+
+/* CONTACT STYLING */
+
+
+.contact-section {
+	padding: 2em 1em;
+	border-bottom: 1px solid #e7e7e7;
+	display: block;
+	margin: auto;
+	width: 90%;
+}
+
+	#contact-title {
+		text-transform: uppercase;
+	}
+
+	#contact-text {
+		padding-bottom: 1em;
+	}
+
+	.bold-text {
+		font-weight: bolder;
+	}
+
+
+/* FOOTER STYLING */
+
+
+footer {
+	padding-bottom: 3em;
+	
+}
+
+	#student-name {
+		padding-left: 15px;
+		float: left;
+		font-weight: bolder;
+		color: #3a3a3a;
+	}
+
+	#back-to-top {
+		padding-right: 15px;
+		float:right;
+		font-weight: bolder;
+		text-transform: uppercase;
+		color: #3a3a3a;
+	}
+
+	#footer-nav {
+		display: none;
+	}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 769px) {
+	
+	.main-header {
+		padding-bottom: 10em;
+	}
+
+
+		h1 {
+			padding-top: 1em;
+		}
+
+		ul li {
+			display:inline-block;
+			background-color: #fafafa;
+		}
+
+		.bio-text {
+			font-size: 1.25em;
+			text-align: left;
+		}
+
+		.profile-pic {
+			display: block;
+			float: right;
+			width: 40%;
+			margin-left: 1em;
+		}
+	
+	.portfolio-section {
+		padding-top: 2em;
+	}
+	
+		.portfolio-tile {
+			display: inline-block;
+			width: 45%;
+		}
+	
+	#contact-title {
+		font-size: .8em;
+	}
+	
+	#contact-text {
+		font-size: 1.4em;
+	}
+	
+	.contact-section p {
+		font-size: 1.3em;
+	}
+	
+	#back-to-top {
+		display:none;
+	}
+	
+	#footer-nav {
+		display: inline-block;
+		float:right;
+		padding-right: 1em;
+	}
+	#footer-nav a {
+		padding: .2em 1em;
+		font-weight: bolder;
+		color: #3a3a3a;
+	}
+	
+	footer {
+		margin-bottom: 3em;
+	}
+}
+
+@media (min-width: 1025px) {
+	
+	.main-header {
+		padding-bottom: 15%;
+	}
+	
+		.header-nav {
+			margin: 4em
+		}
+
+			h1 {
+				display: inline-block;
+				float: left;
+				padding: 0;
+			}
+
+			ul {
+				float: right;
+				display: inline-block;	
+			}
+	
+	.bio-text {
+		margin-left: 5%;
+	}
+	
+		.profile-pic {
+			width: 30%;
+			margin-right: 5%;
+		}
+
+	
+	h2 {
+		padding-bottom: 2em;
+	}
+	
+	.portfolio-tile {
+			width: 30%;
+		}
+	
+	
+	.contact-section {
+		width: 80%;
+	}
+	
+		#contact-text {
+			font-size: 1.1em;
+			display: block;
+			margin: 0 auto;
+			width: 65%;
+		}
+
+}
+
+
+/* CLEARFIX */
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
