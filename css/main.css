@@ -6,7 +6,6 @@
 
 body {
 	font-family: 'Varela Round', sans-serif;
-	font-family: 
 	color: #3a3a3a;
 	text-align: center;
 	background-color:  #fafafa;
@@ -276,8 +275,4 @@ footer {
 
 .clearfix:after {
   clear: both;
-}
-
-.clearfix {
-  *zoom: 1;
 }
